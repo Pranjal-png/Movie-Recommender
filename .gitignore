@@ -1,0 +1,98 @@
+# =============================
+# PYTHON / MACHINE LEARNING
+# =============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# =============================
+# DATASETS / MODELS
+# =============================
+data/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.zip
+*.gz
+*.tar
+*.rar
+
+# Trained models and checkpoints
+models/
+checkpoints/
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# =============================
+# NOTEBOOKS / OUTPUT FILES
+# =============================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+outputs/
+results/
+experiments/
+logs/
+*.log
+*.out
+*.err
+
+# =============================
+# STREAMLIT / DEPLOYMENT
+# =============================
+# Environment secrets (never push to GitHub)
+.env
+.env.local
+.env.*
+
+# Streamlit configs (set in Streamlit Cloud dashboard)
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# =============================
+# IDE / EDITOR CONFIGS
+# =============================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =============================
+# CACHE / TEMP / SYSTEM FILES
+# =============================
+.cache/
+*.bak
+*.swp
+*.swo
+*.tmp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =============================
+# BUILD / DIST FILES
+# =============================
+build/
+dist/
+*.spec
+
+# =============================
+# OPTIONAL (LARGE RAW DATA / MEDIA)
+# =============================
+media/
+saved_models/
