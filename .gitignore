@@ -28,3 +28,7 @@ models/
 # --- misc ---
 *.log
 *.tmp
+# Ignore large model files
+similarity.pkl
+model/similarity.pkl
+model/movie_list.pkl
