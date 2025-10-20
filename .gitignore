@@ -34,4 +34,3 @@ datasets/
 # Ignore large pickle files
 model/*.pkl
 *.pkl
-!similarity.pkl
