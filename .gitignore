@@ -1,4 +1,4 @@
-# --- virtual environments / python libs ---
+# --- Virtual environments / Python libs ---
 venv/
 env/
 .venv/
@@ -7,28 +7,30 @@ Scripts/
 share/
 etc/
 
-# --- cache / compiled files ---
+# --- Cache / compiled files ---
 __pycache__/
 *.py[cod]
 *$py.class
 *.dll
 
-# --- notebooks checkpoints ---
+# --- Notebook checkpoints ---
 .ipynb_checkpoints/
-
-# --- data / models ---
-data/
-datasets/
-models/
 
 # --- IDE files ---
 .vscode/
 .idea/
 
-# --- misc ---
+# --- Logs and temp files ---
 *.log
 *.tmp
-# Ignore large model files
-similarity.pkl
-model/similarity.pkl
-model/movie_list.pkl
+
+# --- Sensitive config ---
+.streamlit/secrets.toml  # Important: hide your API key locally
+
+# --- Data / models ---
+data/
+datasets/
+
+# Ignore large pickle files
+model/*.pkl
+*.pkl
