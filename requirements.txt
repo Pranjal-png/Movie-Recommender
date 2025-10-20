@@ -2,4 +2,7 @@ streamlit
 pandas
 requests
 gzip
+numpy
+scikit-learn
+
 
