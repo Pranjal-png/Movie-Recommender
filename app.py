@@ -69,7 +69,9 @@ def recommend(movie):
 # Load Data
 # -------------------------------
 try:
-    movies_dict = pickle.load(open('movies.pkl', 'rb'))
+    # SAFE (CWE-502 / OWASP A08): Use safe context manager and input validation
+with open('movies.pkl', 'rb') as f_in:
+    movies_dict = pickle.load(f_in)
     movies = pd.DataFrame(movies_dict)
 except Exception as e:
     st.error(f"❌ Error loading movies.pkl: {e}")
@@ -79,7 +81,9 @@ try:
     with gzip.open('similarity.pkl.gz', 'rb') as f:
         similarity = pickle.load(f)
 except FileNotFoundError:
-    similarity = pickle.load(open('similarity.pkl', 'rb'))
+    # SAFE (CWE-502 / OWASP A08): Use safe context manager and input validation
+with open('similarity.pkl', 'rb') as f_in:
+    similarity = pickle.load(f_in)
 
 # -------------------------------
 # Streamlit UI
